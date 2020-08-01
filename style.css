@@ -11,7 +11,7 @@ html,body{
 }
 div{
 	position: absolute;
-	top: 55%;
+	top: 60%;
 	left: 60%;
 	transform: translate(-50%, -50%);
 	display: flex;
@@ -29,7 +29,7 @@ input{
 }
 h2{
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	left: 60%;
 	transform: translateX(-50%);
 	border: 2px solid black;
@@ -137,14 +137,14 @@ h1{
 
 #laps{
 	position: absolute;
-	top: 14%;
+	top: 16%;
 	left: 0%;
-	background-color: white;
+	background-color: transparent;
 	color: black;
 	border: 2px solid black;
 	border-left: none;
 	width: 25%;
-	height: 70%;
+	height: 73%;
 	transform: translate(0, 0);
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px; 
@@ -161,8 +161,11 @@ h1{
 	padding: 5px 5px;
 }
 #laps > h3{
-	margin-top: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
 	font-size: 1.8em;
+	border-bottom: 2px solid black;
 }
 #refresh-marker-list{
 	text-decoration: none;
@@ -171,6 +174,9 @@ h1{
 #laps > ul{
 	font-size: 1.5em;
 }
+ul > li{
+	border-top: 2px solid white
+;}
 #refresh-marker-list{
 	padding-left: 10px;
 	font-size: 1em;

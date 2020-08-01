@@ -14,10 +14,15 @@ document.querySelector('#to-marker').addEventListener("click",function(e){
 			document.querySelector('#laps > ul').appendChild(secele);
 		}
 		else{
-			document.querySelector('#message-text').textContent = 'No more';
+			document.querySelector('#message-text').textContent = 'No more!';
+			document.querySelector('#message-symbol').textContent = '✖';
+			document.querySelector('#message-box').style.backgroundColor = '#FF0025';
 			document.querySelector('#message-box').style.display = 'flex';
  		setTimeout(function(){ 
  			document.querySelector('#message-box').style.display = 'none';
+ 			document.querySelector('#message-text').textContent = 'Copied';
+			document.querySelector('#message-symbol').textContent = '✔';
+			document.querySelector('#message-box').style.backgroundColor = '#35FF3B';
  		},900);
 		}
 });
