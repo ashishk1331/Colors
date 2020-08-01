@@ -8,27 +8,33 @@
 	<h1><code>Create y0ur C0l0urs here</code></h1>
 
 	<span id="laps">
-		<h3>Markers</h3>
-		<p>
-		<a id="to-marker" href="#"><abbr title="Bookmark the code in markers section.">🔖</abbr></a>
-		<a id="refresh-marker-list" href="#">🔃</a>
-		</p>
+		<h3>Markers<a id="refresh-marker-list" href="#">🔃</a></h3>
 		<ul>
 		</ul>
+		<a id="to-marker" href="#"><abbr title="Bookmark the code in markers section.">➕</abbr></a>
 	</span>
 
-	<h2><p><code>rgb(<code id="color-code">0,0,0</code>)</code></p> <a href="#"><abbr id="copy-the-code" title="copy the code">📎</abbr></a></h2>
+	<h2>
+		<p id="copy-the-code">
+			<code>rgb(<code id="color-code">0,0,0</code>)</code>
+		</p> 
+		<p id="copy-the-hex">
+		<code>#<code id="red-part">00</code><code id="green-part">00</code><code id="blue-part">00</code>
+		</code>
+	</p>
+	</h2>
 <div id="main-body">
 	<input class="slider" id="red-slider" type="range" min="0" max="255" step="1" value="0">
 	<input class="slider" id="green-slider" type="range" name="g" min="0" max="255" value="0">
 	<input class="slider" id="blue-slider" type="range" name="b" min="0" max="255" value="0">
 	
 </div>
-<div id="hex-value">
-	<p id="thehexcode"><code>#<code id="red-part">00</code><code id="green-part">00</code><code id="blue-part">00</code>
-	</code></p>
-	<a href="#"><abbr id="copy-the-hex" title="copy the code">📎</abbr></a>
+
+<div id="message-box">
+	<p>✔</p><code id="message-text">Copied!</code>	
 </div>
+
+
 <footer>
 	<code>made with <figure class="anime">❤</figure> from <figure class="anime">♻</figure><br><a href="https://github.com/hugekontrast" id="link">github > hugekontrast</a></code>
 </footer>

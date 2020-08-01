@@ -76,21 +76,29 @@ rangeb.addEventListener("input", function() {
 
 
 document.querySelector('#copy-the-code').addEventListener("click",function(e){
-	const text = document.querySelector('p').textContent;
+	const text = document.querySelector('p').textContent.trim();
 		const el = document.createElement('textarea');
  		 el.value = text;
   		document.body.appendChild(el);
  		 el.select();
  		 document.execCommand('copy');
  		document.body.removeChild(el);
+ 		document.querySelector('#message-box').style.display = 'flex';
+ 		setTimeout(function(){ 
+ 			document.querySelector('#message-box').style.display = 'none';
+ 		},900);
 });
 
 document.querySelector('#copy-the-hex').addEventListener("click",function(e){
-		const text = document.querySelector('#thehexcode').textContent;
+		const text = document.querySelector('#copy-the-hex').textContent.trim();
 		const el = document.createElement('textarea');
  		 el.value = text;
   		document.body.appendChild(el);
  		 el.select();
  		 document.execCommand('copy');
  		document.body.removeChild(el);
+ 		document.querySelector('#message-box').style.display = 'flex';
+ 		setTimeout(function(){ 
+ 			document.querySelector('#message-box').style.display = 'none';
+ 		},900);
 });
